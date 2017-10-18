@@ -2,12 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script></title>
+    <script src="js/scripts.js"></script>
+    <title>Postcard from Betty!</title>
   </head>
   <body>
-    <div class="container"
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Fill in the blank to get a postcard from your aunt Betty!</h1>
+      </div>
+      <form id="formOne">
+        <label for ="letterName">Your Name: </label>
+        <input id="letterName" class="form-control" type="text">
+        <button type="submit" class="btn text-center">Get my postcard!</button>
+      </form>
+      <br>
+      <div class="row hidden">
+        <div class="col-lg-4 card">
+          <div class="card-text">
+            <p> To: <span class="letterName"></span></p>
+            <p>123 North Fake Street</p>
+            <p>Des Moines, IA 87654</p>
+          </div>
+        </div>
+        <div class="col-lg-7 card">
+          <div class="card-text">
+            <p>Dearest <span class="letterName"></span>,</p>
+            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
